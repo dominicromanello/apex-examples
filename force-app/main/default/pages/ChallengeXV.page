@@ -1,0 +1,21 @@
+<!-- Create a table that shows a paginated table of Contacts 
+with buttons to cycle the Contacts viewed in the table. 
+Use a custom controller.
+Bonus: Allow the page size to be controlled by the user. -->
+
+<apex:page Controller="ChallengeXV">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!contactList}" var="contact">
+                <apex:column value="{!contact.FirstName}"/>
+                <apex:column value="{!contact.LastName}"/>
+                <apex:column value="{!contact.Phone}"/>
+                <apex:column value="{!contact.Email}"/>
+            </apex:pageBlockTable>
+            <apex:pageBlockButtons >
+                <apex:commandButton action="{!next}" value="Next"/>
+                <apex:commandButton action="{!previous}" value="Previous"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

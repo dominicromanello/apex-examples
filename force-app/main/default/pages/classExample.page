@@ -1,0 +1,21 @@
+<apex:page standardController="Account">
+    <p>
+        Sup Muddafukkas!
+    </p>
+    <apex:form >
+        <apex:pageblock >
+    		<apex:outputText value="{!Account.Name}" />
+            <apex:outputText value="{!Account.BillingStreet}"/>
+            <apex:outputText value="{!Account.BillingState}"/>
+            <apex:outputText value="{!Account.BillingPostalCode}"/>
+            <apex:outputText value="{!Account.BillingCity}"/>
+        </apex:pageblock>
+        <apex:pageblock >
+    		<apex:outputText value="{!Account.Name}" />
+            <apex:outputText value="{!Account.BillingStreet}"/>
+            <apex:outputText value="{!Account.BillingState}"/>
+            <apex:outputText value="{!Account.BillingPostalCode}"/>
+            <apex:outputText value="{!Account.BillingCity}"/>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

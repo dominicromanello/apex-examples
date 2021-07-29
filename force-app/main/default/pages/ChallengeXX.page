@@ -1,0 +1,10 @@
+<!-- 
+        Challenge XX
+    Make a callout to any API of your choice, update your page utilizing the data retrieved.
+-->
+
+<apex:page>
+    <apex:pageBlock>
+
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,15 @@
+<apex:page Controller="AccountsAndRelatedContacts">
+<title>Accounts</title>
+<h1>Accounts and their Related Contact Information</h1>
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!contactList}" var="contact">
+                <apex:column value="{!contact.Account.Name}"/>
+                <apex:column value="{!contact.FirstName}"/>
+                <apex:column value="{!contact.LastName}"/>
+                <apex:column value="{!contact.Phone}"/>
+                <apex:column value="{!contact.Email}"/>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
