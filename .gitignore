@@ -36,3 +36,15 @@ $RECYCLE.BIN/
 
 # Local environment variables
 .env
+
+#Config files
+.vscode/
+config/
+scripts/
+.eslintignore
+.forceignore
+.prettierignore
+.prettierrc
+jest.config.js
+package.json
+sfdx-project.json
